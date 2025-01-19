@@ -13,10 +13,10 @@ while True:
         x_coords = float(input("X spawn position: "))
         y_coords = float(input("Y spawn position: "))
         for i in range(10):
-            rand = input("Random numerical settings? (type 'comfirm' to comfirm it and type 'deny' to deny it): \n")
-            if rand != "confirm" or rand != "deny":
+            rand = input("Random numerical settings? (type 'confirm' to confirm it and type 'deny' to deny it): ").lower(
+            if rand != "confirm" and rand != "deny":
                 print("Invalid input please try again")
-            elif i == 10:
+            elif i == 9:
                 print("Defaulted to confirm")
             else:
                 break
