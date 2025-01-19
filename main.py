@@ -86,6 +86,6 @@ elif rand == ("deny"):
             turtle.color(col)
             print("Current iteration is: " + str(fw + 1))
 
-        print("Render succesfully completed. Plz left-click on render window to terminate.")
+    print("Render succesfully completed. Plz left-click on render window to terminate.")
 
-        turtle.exitonclick
+    turtle.exitonclick
