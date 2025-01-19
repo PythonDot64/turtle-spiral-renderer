@@ -1,8 +1,6 @@
 import turtle
 import random
 
-turtle.penup()
-
 while True:
     try:
         render_speed = int(input("Speed of the render(10 being the highest and 1 being the slowest while 0 is having no animation in between the vertices and only intergers.): "))
@@ -17,7 +15,7 @@ while True:
             if rand != "confirm" and rand != "deny":
                 print("Invalid input please try again")
             elif i == 9:
-                print("Defaulted to confirm")
+                print("Defaulted to deny")
             else:
                 break
         rand_dat = (0)
@@ -40,7 +38,7 @@ turtle.speed(render_speed)
 b_col = turtle.Screen()
 b_col.bgcolor(background)
 
-if rand == ("comfirm"):
+if rand == ("confirm"):
     print("Colours are:")
     print("white, white smoke, gainsboro, light gray, silver, dark gray, gray, dim gray, black, light slate gray, slate gray, alice blue, light steel blue, cornflower blue, royal blue, blue, medium blue, navy, dark blue, midnight blue, light blue, deep sky blue, dodger blue, powder blue, sky blue, light sky blue, steel blue, azure, light cyan, cyan, pale turquoise, dark turqoise, turquoise, medium turquoise, light sea green, cadet blue, dark cyan, teal, dark slate gray, mint green, aquamarine, medium aquamarine, dark sea green, medium sea green, sea green, honeydew, pale green, light green, medium spring green, spring green, lime green, green, forest green, dark green, green yellow, chartruse, lawn green, lime, yellow green, olive drab, beige, dark kahki, olive, dark olive green, pale goldenrod, kahki, ivory, light yellow, light goldenrod yellow, cornsilk, lemon chiffon, yellow, gold, goldenrod, dark goldenrod, wheat, tan, burlywood, peru, sienna, saddle brown, floral white, old lace, novajo white, moccasin, sandy brown, orange, dark orange, chocolate, firebrick, brown, dark red, maroon, antique white, papaya whip, blanched almond, bisque, peach puff, light salmon, coral, tomato, orange red, red, crimson, dark salmon, salmon, light coral, indian red, rosy brown, linen, seashell, misty rose, pink, light pink, hot pink, deep pink, snow, lavender bush, pale violet red, violet red, medium violet red, purple, dark magenta, violet, magenta, thistle, plum, orchid, medium orchid, dark violet, blue violet, medium purple, rebecca purple, indigo, ghost white, lavender, light slate blue, medium slate blue, slate blue, and finnaly, dark slate blue.\n")
 
